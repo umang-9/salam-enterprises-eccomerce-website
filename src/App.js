@@ -39,6 +39,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route index path="/" element={<Home />} />
+        <Route index path="/salam-enterprises-eccomerce-website/" element={<Home />} />
 
         <Route path="categories" element={<Categories />}>
           <Route path="all" element={<All />} />
