@@ -39,19 +39,19 @@ function App() {
       <Navbar />
       <Routes>
         <Route index path="/" element={<Home />} />
-        <Route index path="/salam-enterprises-eccomerce-website/" element={<Home />} />
+        <Route index exact path="/salam-enterprises-eccomerce-website/" element={<Home />} />
 
-        <Route path="categories" element={<Categories />}>
-          <Route path="all" element={<All />} />
-          <Route path="furnitures" element={<Furnitures />} />
-          <Route path="electronics" element={<Electronics />} />
-          <Route path="lamps" element={<Lamps />} />
-          <Route path="kitchen" element={<Kitchen />} />
-          <Route path="chairs" element={<Chairs />} />
-          <Route path="skin-care" element={<SkinCare />} />
+        <Route path="/salam-enterprises-eccomerce-website/categories" element={<Categories />}>
+          <Route path="/salam-enterprises-eccomerce-website/categories/all" element={<All />} />
+          <Route path="/salam-enterprises-eccomerce-website/categories/furnitures" element={<Furnitures />} />
+          <Route path="/salam-enterprises-eccomerce-website/categories/electronics" element={<Electronics />} />
+          <Route path="/salam-enterprises-eccomerce-website/categories/lamps" element={<Lamps />} />
+          <Route path="/salam-enterprises-eccomerce-website/categories/kitchen" element={<Kitchen />} />
+          <Route path="/salam-enterprises-eccomerce-website/categories/chairs" element={<Chairs />} />
+          <Route path="/salam-enterprises-eccomerce-website/categories/skin-care" element={<SkinCare />} />
         </Route>
-        <Route path="categories/product/:id" element={<ProductPage />} />
-        <Route path="our-products" element={<OurProducts />} />
+        <Route path="/salam-enterprises-eccomerce-website/categories/product/:id" element={<ProductPage />} />
+        <Route path="/salam-enterprises-eccomerce-website/our-products" element={<OurProducts />} />
       </Routes>
     </CartContext.Provider>
   );

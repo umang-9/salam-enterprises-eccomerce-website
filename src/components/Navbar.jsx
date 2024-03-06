@@ -97,15 +97,15 @@ function Navbar() {
               />
             </Link>
             <div className="nav-links">
-              <Link onClick={() => window.scrollTo(0, 0)} to="/">
+              <Link onClick={() => window.scrollTo(0, 0)} to="/salam-enterprises-eccomerce-website/">
                 About Us
               </Link>
-              <Link onClick={() => window.scrollTo(0, 0)} to="/categories/all">
+              <Link onClick={() => window.scrollTo(0, 0)} to="/salam-enterprises-eccomerce-website/categories/all">
                 Shop by Category
               </Link>
               <Link
                 onClick={() => window.scrollTo(0, 0)}
-                to="/our-products"
+                to="/salam-enterprises-eccomerce-website/our-products"
               >
                 Our Products
               </Link>
